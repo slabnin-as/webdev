@@ -1,0 +1,32 @@
+body {
+    background-color: #FEEED6;
+    color: gray;
+}
+h1 {
+    font-size: 1.4em;
+}
+
+table {
+    border: gray;
+    width: 30%;
+}
+
+div {
+    margin-bottom: 0.4em;
+    font-size: 1.1em;
+}
+
+span {
+    color: #3498DB;
+    font-weight: bolder;
+}
+
+p {
+    text-indent: 1.3em;
+    line-height: 1.3em;
+}
+
+.content {
+    width: 650px;
+    text-align: justify;
+}

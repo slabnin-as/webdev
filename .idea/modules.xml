@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CSS_Table/CSS_Table.iml" filepath="$PROJECT_DIR$/CSS_Table/CSS_Table.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSS_Text/CSS_Text.iml" filepath="$PROJECT_DIR$/CSS_Text/CSS_Text.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/webdev.iml" filepath="$PROJECT_DIR$/.idea/webdev.iml" />
     </modules>
   </component>
