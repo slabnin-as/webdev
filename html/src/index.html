@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация пользователя</title>
+</head>
+<body>
+    <span>Регистрация</span>
+    <form action="/registration.php" method="post">
+        <label>
+            Логин: <input type="text" name="username" placeholder="login">
+        </label>
+        <label>
+            Пароль: <input type="password" name="password" placeholder="password">
+        </label>
+        <br>
+        <span>Пол: </span>
+        <label>
+            Муж. <input checked="checked" type="radio" value="male" name="sex">
+        </label>
+        <label>
+            Жен. <input type="radio" value="female" name="sex">
+        </label>
+        <br>
+        <span>Музыка: </span>
+        <label>
+            Rock <input type="checkbox" value="rock" name="music">
+        </label>
+        <label>
+            POP <input type="checkbox" value="pop" name="music">
+        </label>
+        <label>
+            DubStep <input type="checkbox" value="dub" name="music">
+        </label>
+        <br>
+        <select multiple="multiple" name="drink">
+            <option>Water</option>
+            <option>Lemonade</option>
+            <option>Beer</option>
+            <option>Vodka</option>
+        </select>
+        <span>Адрес:</span>
+        <textarea cols="30" rows="4" name="address"></textarea>
+        <p>
+        <select name="car">
+            <option>Audi</option>
+            <option>Mercedes-Benz</option>
+            <option>Lada</option>
+        </select>
+        </p>
+        <p><button type="submit">Зарегистрироваться</button></p>
+    </form>
+    <a href="./extra.html">Дополнительно</a>
+</body>
+</html>
