@@ -1,19 +1,27 @@
-table {
+.employee {
     border-collapse: collapse;
-    font-family: 'Calibri', Times, serif;
-}
-thead {
-    background-color: #3498DB;
-    color: white;
+    font-family: 'Calibri';
+    font-size: 22px;
+    width: 78%;
 }
 
-th, td {
+.employee thead {
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.employee tbody > tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.employee th {
     border: 1px solid lightgray;
     text-align: left;
-    padding: 7px;
-    width: 120px;
+    padding: .4em;
 }
 
-.grey-row {
-    background-color: #eeeeee;
+.employee td {
+    border: 1px solid lightgray;
+    text-align: left;
+    padding: .4em;
 }
