@@ -1,32 +1,35 @@
 body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
     background-color: #FEEED6;
-    color: gray;
-}
-h1 {
-    font-size: 1.4em;
+    color: #656565;
 }
 
-table {
-    border: gray;
-    width: 30%;
+.course-description {
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
 }
 
-div {
-    margin-bottom: 0.4em;
-    font-size: 1.1em;
-}
-
-span {
-    color: #3498DB;
+.course-description span {
+    color: #378db2;
     font-weight: bolder;
 }
 
-p {
-    text-indent: 1.3em;
-    line-height: 1.3em;
+.course-description h1 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
-.content {
-    width: 650px;
-    text-align: justify;
+.subtitle {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.course-description p {
+    text-indent: 1em;
+    line-height: 1.4;
+    margin-top: .5em;
+    margin-bottom: .3em;
 }
