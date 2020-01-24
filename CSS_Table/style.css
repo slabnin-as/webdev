@@ -1,6 +1,6 @@
 .employee {
     border-collapse: collapse;
-    font-family: 'Calibri';
+    font-family: "Calibri", serif;
     font-size: 22px;
     width: 78%;
 }
@@ -15,13 +15,13 @@
 }
 
 .employee th {
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     text-align: left;
     padding: .4em;
 }
 
 .employee td {
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     text-align: left;
     padding: .4em;
 }
