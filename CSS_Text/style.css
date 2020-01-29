@@ -9,6 +9,7 @@ body {
     max-width: 700px;
     margin: auto;
     text-align: justify;
+    padding: 15px;
 }
 
 .course-description span {
@@ -23,14 +24,18 @@ body {
 }
 
 .subtitle {
-    margin-bottom: 0.5em;
+    margin-bottom: 10px;
     font-size: 1.2em;
+}
+
+.subtitle:last-of-type {
+    margin-top: 15px;
 }
 
 .course-description p {
     font-size: 1.1em;
     text-indent: 1em;
     line-height: 1.4;
-    margin-top: .5em;
-    margin-bottom: .3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
 }
