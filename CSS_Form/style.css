@@ -1,14 +1,68 @@
-h2 {
-    font-family:inherit;
-    font-weight:500;
-    line-height:1.1;
-    color:#777;
-    padding: 10px;
-    margin-bottom: -3px;
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #FEEED6;
+    color: #676565;
 }
 
-form {
-    background-color: #FEEED6;
-    width: 650px;
+.white-color {
+    background-color: #fff;
+    height: 60px;
+}
+
+.head {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 13px;
+}
+
+.head h2 {
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 500;
+    color: #676565;
+}
+
+.main-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 13px;
+    height: 575px;
+}
+
+.form-label {
+    line-height: 28px;
+    margin-top: 13px;
+}
+
+.form-label input {
+    border: none;
     padding: 10px;
+    width: 100%;
+    min-width: 70%;
+    font-family: inherit;
+}
+
+.form-label textarea{
+    border: none;
+    height: 140px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-label label{
+    font-size: inherit;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.send-button {
+    float: right;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #378db2;
+    border: none;
+    margin-right: -20px;
 }
