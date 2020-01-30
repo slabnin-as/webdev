@@ -96,7 +96,39 @@
 }
 
 .button-block {
-    margin-top: -16px;
-    height: 95px;
+    height: 100px;
     background-color: #f9f9f9;
+    display: flex;
+}
+
+.button-block button {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    border: 1px solid #628428;
+    width: 170px;
+    height: 40px;
+    margin: 8px;
+    align-self: center;
+}
+
+.button-block .send-button {
+    background-color: #eee;
+    color: #949494;
+}
+
+.button-block .arch-button {
+    margin-right: auto;
+}
+
+.button-block .green-col {
+    background-color: #8eba39;
+    color: #fff;
+}
+
+.prev-request {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 80px;
+    margin-top: -16px;
 }
