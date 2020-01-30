@@ -99,6 +99,7 @@
     height: 100px;
     background-color: #f9f9f9;
     display: flex;
+    padding: 0 15px;
 }
 
 .button-block button {
@@ -108,12 +109,12 @@
     border: 1px solid #628428;
     width: 170px;
     height: 40px;
-    margin: 8px;
+    margin: 0 8px;
     align-self: center;
 }
 
 .button-block .send-button {
-    background-color: #eee;
+    background: linear-gradient(180deg, #f7f7f7, #c8c8c8);
     color: #949494;
 }
 
@@ -122,7 +123,7 @@
 }
 
 .button-block .green-col {
-    background-color: #8eba39;
+    background: linear-gradient(180deg, #9ec454, #7ca92f);
     color: #fff;
 }
 
