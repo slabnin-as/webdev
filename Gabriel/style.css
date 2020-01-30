@@ -1,0 +1,102 @@
+.gabriel {
+    margin: auto;
+    width: 910px;
+    height: 645px;
+    border: 1px solid #dbdbdb;
+}
+
+.nav-menu {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nav-menu tr{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #fed516;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.nav-menu td{
+    border-left: 2px solid #c6a612;
+    text-align: center;
+    width: 13%;
+}
+
+.nav-menu span {
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #846f0c;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.nav-menu a:active {
+    text-decoration: underline;
+    color: #d50307;
+}
+
+.inactive-menu {
+    color: #d4b215;
+}
+
+.request-table {
+    width: 100%;
+    height: 244px;
+    background-color: #f9f9f9;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #6d6d6d;
+    border-collapse: collapse;
+}
+
+.request-table th {
+    height: 32px;
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 2px solid #dbdbdb;
+}
+
+.request-table td {
+    padding-top: 13px;
+}
+
+.left-align {
+    text-align: left;
+    padding-left: 15px;
+    width: 215px;
+}
+
+.request-table tbody {
+    font-family: inherit;
+    text-align: center;
+}
+
+.address {
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.et-count {
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.request-table input{
+    width: 95%;
+    height: 13px;
+}
+
+.button-block {
+    margin-top: -16px;
+    height: 95px;
+    background-color: #f9f9f9;
+}
