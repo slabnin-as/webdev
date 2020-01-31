@@ -205,3 +205,19 @@
 .bottom-table td:nth-child(1) {
     padding-left: 25px;
 }
+
+[name="validator"] {
+    display: none;
+}
+
+[name="letter"] {
+    display: none;
+}
+
+[name="address"] {
+    display: none;
+}
+
+[name="et"] {
+    display: none;
+}
