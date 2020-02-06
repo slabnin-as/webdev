@@ -1,5 +1,6 @@
-var countries = [];
+"use strict";
 
+var countries = [];
 countries[0] = {
     name: "Russia",
     cities: [{
@@ -57,7 +58,7 @@ countries[2] = {
     ]
 }
 
-getMaxCitiesCountries(countries);
+console.table(getMaxCitiesCountries(countries));
 console.table(getCountryPopulation(countries));
 
 function getMaxCitiesCountries(countriesList) {
@@ -72,26 +73,20 @@ function getMaxCitiesCountries(countriesList) {
         } else if (country.cities.length === maxCitiesInCountry) {
             countriesName.push(country.name);
         }
-
-        console.log(countriesName);
     });
 
     return countriesName;
 }
 
 function getCountryPopulation(countriesList) {
-    let countriesPopulationList = [];
-    let countryPopulation = {};
+    var countriesPopulationList = [];
 
     countriesList.forEach(function(country) {
+        var countryPopulation = {};
         countryPopulation.name = country.name;
         countryPopulation.population = calcPopulation(country.cities);
 
-        console.log(countryPopulation);
-
         countriesPopulationList.push(countryPopulation);
-
-        console.log(countriesPopulationList);
     });
 
     return countriesPopulationList;
