@@ -3,7 +3,7 @@
     width: 1024px;
     height: 768px;
     background: linear-gradient(to top right, #b5e5f6, #7dd0ef, transparent),
-                linear-gradient(to top left, #cfeafb, #6faefa, transparent);
+    linear-gradient(to top left, #cfeafb, #6faefa, transparent);
     background-blend-mode: screen;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
     width: 100%;
 }
 
-.nav-menu tr{
+.nav-menu tr {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 20px;
     background-color: #fed516;
@@ -29,7 +29,7 @@
     margin-top: 10px;
 }
 
-.nav-menu td{
+.nav-menu td {
     border-left: 1px solid #c6a612;
     text-align: center;
     width: 13%;
@@ -114,7 +114,7 @@
     font-weight: 600;
 }
 
-.request-table input{
+.request-table input {
     width: 93%;
     height: 15px;
 }
@@ -190,7 +190,7 @@
 .bottom-table thead {
     background: #fcd623;
     font-size: 14px;
-    font-weight: 350;
+    font-weight: 400;
 }
 
 .bottom-table th {
@@ -213,7 +213,7 @@
     border-left: none;
 }
 
-.bottom-table tbody{
+.bottom-table tbody {
     background-color: #f9f9f9;
 }
 
