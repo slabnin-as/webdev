@@ -43,14 +43,15 @@ body {
     font-family: inherit;
 }
 
-.form-label textarea{
+.form-label textarea {
     border: none;
     height: 140px;
     width: 100%;
     padding: 10px;
+    resize: none;
 }
 
-.form-label label{
+.form-label label {
     font-size: inherit;
     font-weight: bold;
     margin-bottom: 10px;
@@ -65,4 +66,9 @@ body {
     background-color: #378db2;
     border: none;
     margin-right: -20px;
+}
+
+.send-button:hover {
+    background-color: darkblue;
+    cursor: pointer;
 }
