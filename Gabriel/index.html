@@ -9,17 +9,21 @@
 <body>
 <div class="gradient">
     <div class="gabriel">
-        <table class="nav-menu">
-            <tr>
-                <td><a href="">Gabriel</a></td>
-                <td><a href="">Gabriel <span>блоки</span></a></td>
-                <td><a href="">Сирена</a></td>
-                <td><a href="">Amadeus</a></td>
-                <td class="inactive-menu">Sabre</td>
-                <td class="inactive-menu">Galileo</td>
-                <td><a href="">Бумажные</a></td>
-            </tr>
-        </table>
+        <div class="nav-menu">
+            <div class="menu-block"><a class="red-color" href="javascript://">Gabriel</a></div>
+            <div class="vert-line"></div>
+            <div class="menu-block"><a href="javascript://">Gabriel <span>блоки</span></a></div>
+            <div class="vert-line"></div>
+            <div class="menu-block"><a href="javascript://">Сирена</a></div>
+            <div class="vert-line"></div>
+            <div class="menu-block"><a href="javascript://">Amadeus</a></div>
+            <div class="vert-line"></div>
+            <div class="menu-block inactive-menu">Sabre</div>
+            <div class="vert-line"></div>
+            <div class="menu-block inactive-menu">Galileo</div>
+            <div class="vert-line"></div>
+            <div class="menu-block"><a href="javascript://">Бумажные</a></div>
+        </div>
 
         <form id="send-data" action="blabla.php" method="post"></form>
 
@@ -243,7 +247,7 @@
         <div class="prev-request">
             <span class="itm1">Предыдущие заявки</span>
             <span class="itm2">Обновлено 31.01.2020, 15:40</span>
-            <img src="refresh.png">
+            <img src="refresh.png" alt="refresh">
         </div>
         <div class="bottom-block">
             <table class="bottom-table">
@@ -253,7 +257,7 @@
                     <th>Номер заявки</th>
                     <th>Статус</th>
                     <th>Система бронирования</th>
-                    <th>Заказано</th>
+                    <th class="ordered">Заказано</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -264,12 +268,12 @@
                     <td>Gabriel</td>
                     <td>400</td>
                 </tr>
-                <tr>
+                <tr class="selected-item">
                     <td>31.01.2020, 01:45</td>
                     <td>32584862E4B2</td>
                     <td>Рассмотрена</td>
                     <td>Amadeus</td>
-                    <td>400</td>
+                    <td>400<img class="trash" src="trash.png" alt="delete"></td>
                 </tr>
                 <tr>
                     <td>31.01.2020, 01:45</td>
@@ -285,7 +289,20 @@
                     <td>Amadeus</td>
                     <td>400</td>
                 </tr>
-
+                <tr>
+                    <td>31.01.2020, 01:45</td>
+                    <td>32584862E4B2</td>
+                    <td>Рассмотрена</td>
+                    <td>Amadeus</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>31.01.2020, 01:45</td>
+                    <td>32584862E4B2</td>
+                    <td>Рассмотрена</td>
+                    <td>Amadeus</td>
+                    <td>400</td>
+                </tr>
                 </tbody>
             </table>
         </div>

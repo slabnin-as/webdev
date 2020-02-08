@@ -1,6 +1,6 @@
 .gradient {
     margin: auto;
-    width: 1024px;
+    max-width: 1024px;
     height: 768px;
     background: linear-gradient(to top right, #b5e5f6, #7dd0ef, transparent),
     linear-gradient(to top left, #cfeafb, #6faefa, transparent);
@@ -14,29 +14,32 @@
     width: 910px;
     height: 670px;
     border: 1px solid #dbdbdb;
+    border-radius: 7px;
+    box-shadow: 0px -7px 10px -9px;
+    background: #f9f9f9;
 }
 
 .nav-menu {
-    border-collapse: collapse;
+    height: 62px;
     width: 100%;
+    background: #fed516;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px 7px 0 0;
 }
 
-.nav-menu tr {
+.menu-block {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    background-color: #fed516;
-    height: 60px;
-    margin-top: 10px;
-}
-
-.nav-menu td {
-    border-left: 1px solid #c6a612;
+    padding-top: 20px;
+    flex-grow: 1;
     text-align: center;
-    width: 13%;
 }
 
-.nav-menu td:first-child {
-    border-left: none;
+.vert-line {
+    border-left: 1px solid #cbaa14;
+    height: 31px;
+    align-self: center;
 }
 
 .nav-menu span {
@@ -49,13 +52,13 @@
     color: #846f0c;
 }
 
-.nav-menu a:hover {
-    text-decoration: underline;
+.red-color {
+    color: #d50307!important;
+    text-decoration: underline!important;
 }
 
-.nav-menu a:active {
+.nav-menu a:hover {
     text-decoration: underline;
-    color: #d50307;
 }
 
 .inactive-menu {
@@ -64,6 +67,7 @@
 
 .mid-table {
     height: 280px;
+    background: #f9f9f9;
     overflow-y: scroll;
 }
 
@@ -117,6 +121,8 @@
 .request-table input {
     width: 93%;
     height: 15px;
+    padding-left: 10px;
+    font-size: 10px;
 }
 
 .button-block {
@@ -135,6 +141,10 @@
     height: 44px;
     margin: 0 8px;
     align-self: center;
+}
+
+.button-block button:hover {
+    cursor: pointer;
 }
 
 .button-block .send-button {
@@ -176,7 +186,16 @@
 }
 
 .prev-request img {
-    margin-bottom: -15px;
+    margin-bottom: -10px;
+}
+
+.prev-request img:hover {
+    cursor: pointer;
+}
+
+.bottom-block {
+    height: 166px;
+    overflow-y: scroll;
 }
 
 .bottom-table {
@@ -184,21 +203,20 @@
     font-family: 'Trebuchet MS', sans-serif;
     color: #6e5c0b;
     border-collapse: collapse;
-    border: 1px solid #f9f9f9;
 }
 
 .bottom-table thead {
     background: #fcd623;
     font-size: 14px;
     font-weight: 400;
+    box-shadow: 0px -7px 10px -9px;
 }
 
 .bottom-table th {
     height: 32px;
     text-align: left;
     padding-left: 15px;
-    border: 2px dotted #c9caca;
-    border-top: none;
+    border-right: 1px dotted #c9caca;
 }
 
 .bottom-table th:nth-child(1) {
@@ -222,11 +240,24 @@
     font-size: 13px;
     padding-left: 15px;
     color: #4d5a6a;
-    border: 2px dotted #c9caca;
+    border-right: 1px dotted #c9caca;
+    border-top: 1px dotted #c9caca;
 }
 
 .bottom-table td:nth-child(1) {
     padding-left: 25px;
+}
+
+.selected-item {
+    background: #b4d3f8;
+}
+
+.ordered {
+    width: 30%;
+}
+
+.trash {
+    float: right;
 }
 
 [name="validator"] {
