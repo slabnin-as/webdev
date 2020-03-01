@@ -1,5 +1,5 @@
 "use strict";
-
+(function () {
 var countries = [];
 countries[0] = {
     name: "Russia",
@@ -20,7 +20,7 @@ countries[0] = {
             population: 575352
         }
     ]
-}
+};
 countries[1] = {
     name: "Spain",
     cities: [{
@@ -36,7 +36,7 @@ countries[1] = {
             population: 568030
         }
     ]
-}
+};
 countries[2] = {
     name: "USA",
     cities: [{
@@ -56,7 +56,7 @@ countries[2] = {
             population: 1345047
         }
     ]
-}
+};
 
 console.table(getMaxCitiesCountries(countries));
 console.table(getCountryPopulation(countries));
@@ -100,3 +100,4 @@ function calcPopulation(cities) {
 
     return sum;
 }
+})();
