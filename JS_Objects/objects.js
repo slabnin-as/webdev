@@ -1,9 +1,11 @@
 "use strict";
+
 (function () {
-var countries = [];
-countries[0] = {
+var countries = [
+{
     name: "Russia",
-    cities: [{
+    cities: [
+        {
             name: "Moscow",
             population: 12615882
         },
@@ -20,10 +22,11 @@ countries[0] = {
             population: 575352
         }
     ]
-};
-countries[1] = {
+},
+{
     name: "Spain",
-    cities: [{
+    cities: [
+        {
             name: "Madrid",
             population: 3265038
         },
@@ -36,10 +39,11 @@ countries[1] = {
             population: 568030
         }
     ]
-};
-countries[2] = {
+},
+{
     name: "USA",
-    cities: [{
+    cities: [
+        {
             name: "New-York",
             population: 8398748
         },
@@ -56,48 +60,29 @@ countries[2] = {
             population: 1345047
         }
     ]
-};
-
-console.table(getMaxCitiesCountries(countries));
-console.table(getCountryPopulation(countries));
+}
+];
 
 function getMaxCitiesCountries(countriesList) {
-    var countriesName = [];
-    var maxCitiesInCountry = 0;
+    const citiesMaximum = Math.max.apply(null, countriesList.map(function (country){return country.cities.length}));
+    var countriesNames = countriesList
+                        .filter(function (country){return country.cities.length === citiesMaximum;})
+                        .map(function (country) {return country.name;});
 
-    countriesList.forEach(function(country) {
-        if (country.cities.length > maxCitiesInCountry) {
-            maxCitiesInCountry = country.cities.length;
-            countriesName.length = 0;
-            countriesName.push(country.name);
-        } else if (country.cities.length === maxCitiesInCountry) {
-            countriesName.push(country.name);
-        }
-    });
-
-    return countriesName;
+    return countriesNames;
 }
 
 function getCountryPopulation(countriesList) {
-    var countriesPopulationList = [];
+    var countriesPopulation = {};
 
     countriesList.forEach(function(country) {
-        var countryPopulation = {};
-        countryPopulation.name = country.name;
-        countryPopulation.population = calcPopulation(country.cities);
-
-        countriesPopulationList.push(countryPopulation);
+        var name = country.name;
+        countriesPopulation[name] = country.cities.reduce(function (sum, city) {return sum + city.population;}, 0);
     });
 
-    return countriesPopulationList;
+    return countriesPopulation;
 }
 
-function calcPopulation(cities) {
-    var sum = 0;
-    cities.forEach(function(city) {
-        sum += city.population;
-    });
-
-    return sum;
-}
+console.table(getMaxCitiesCountries(countries));
+console.table(getCountryPopulation(countries));
 })();
