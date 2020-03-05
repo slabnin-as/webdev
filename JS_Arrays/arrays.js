@@ -15,7 +15,7 @@
         return array.slice(-5);
     }
 
-    function getSumEvenNumbers(array) {
+    function getEvenNumbersSum(array) {
         return array.reduce(function (sum, item) {
             return sum + (item % 2 === 0 ? item : 0);
         }, 0);
@@ -25,22 +25,25 @@
     console.log(numbersArray);
     console.log(getFirstFiveElements(numbersArray));
     console.log(getLastFiveElements(numbersArray));
-    console.log(getSumEvenNumbers(numbersArray));
+    console.log(getEvenNumbersSum(numbersArray));
 
-    function fillArray(start, end, array) {
+    function fillArray(start, end) {
+    var array = [];
+
         for (var i = start; i <= end; i++) {
             array.push(i);
         }
+
+    return array;
     }
 
     function getSquaredEvenNumbersList(array) {
         return array
-        .filter(number => number % 2 === 0)
-        .map(number => number * number);
+            .filter(function (number) {return number % 2 === 0;})
+            .map(function (number) {return number * number;});
     }
 
-    var array2 = [];
-    fillArray(1, 100, array2);
+    var array2 = fillArray(1, 100);
 
     console.log(array2);
     console.log(getSquaredEvenNumbersList(array2));
