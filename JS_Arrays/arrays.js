@@ -28,19 +28,23 @@
     console.log(getEvenNumbersSum(numbersArray));
 
     function fillArray(start, end) {
-    var array = [];
+        var array = [];
 
         for (var i = start; i <= end; i++) {
             array.push(i);
         }
 
-    return array;
+        return array;
     }
 
     function getSquaredEvenNumbersList(array) {
         return array
-            .filter(function (number) {return number % 2 === 0;})
-            .map(function (number) {return number * number;});
+            .filter(function (number) {
+                return number % 2 === 0;
+            })
+            .map(function (number) {
+                return number * number;
+            });
     }
 
     var array2 = fillArray(1, 100);
