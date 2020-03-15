@@ -1,36 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
     <link rel="stylesheet" href="style.css">
-    <title>TODO List!</title>
 </head>
 <body>
-<h1>TODO List</h1>
-<div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Создать задачу" aria-label="Recipient's username" aria-describedby="add-button">
-    <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="add-button">Добавить</button>
-    </div>
+<h1>TO DO List</h1>
+<div>
+    <input type="text" id="input-field">
+    <button type="button" id="add-note">Добавить</button>
 </div>
-<div class="list-group dropright" id="todo-list">
-
-    <div class="dropdown-menu" id="drop-menu">
-        <!-- Dropdown menu links -->
-        <button class="dropdown-item" type="button">Изменить</button>
-        <button class="dropdown-item" type="button">Удалить</button>
-    </div>
-</div>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<ul id="todo-list">
+</ul>
+<script language="javascript" type="text/javascript" src="todoList.js"></script>
 </body>
 </html>
