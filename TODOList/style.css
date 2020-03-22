@@ -1,19 +1,7 @@
-.input-group {
-    width: 30%;
+.delete-button {
+    margin-left: 40px;
 }
 
-.list-group {
-    width: 30%;
-}
-
-@media (max-width: 992px) {
-    .input-group {
-        width: 60%;
-    }
-}
-
-@media (max-width: 768px) {
-    .input-group {
-        width: 100%;
-    }
+.button {
+    margin-left: 5px;
 }
