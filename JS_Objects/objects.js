@@ -64,21 +64,20 @@
     ];
 
     function getMaxCitiesCountries(countriesList) {
-        const citiesMaximum = Math.max.apply(null, countriesList.map(function (country) {
-            return country.cities.length
+        var citiesMaximum = Math.max.apply(null, countriesList.map(function (country) {
+            return country.cities.length;
         }));
-        var countriesNames = countriesList
+
+        return countriesList
             .filter(function (country) {
                 return country.cities.length === citiesMaximum;
             })
             .map(function (country) {
-                return country.name;
+                return [country.name];
             });
-
-        return countriesNames;
     }
 
-    function getCountryPopulation(countriesList) {
+    function getCountriesPopulation(countriesList) {
         var countriesPopulation = {};
 
         countriesList.forEach(function (country) {
@@ -92,5 +91,5 @@
     }
 
     console.table(getMaxCitiesCountries(countries));
-    console.table(getCountryPopulation(countries));
+    console.table(getCountriesPopulation(countries));
 })();
