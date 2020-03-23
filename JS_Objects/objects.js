@@ -73,7 +73,7 @@
                 return country.cities.length === citiesMaximum;
             })
             .map(function (country) {
-                return [country.name];
+                return country;
             });
     }
 
