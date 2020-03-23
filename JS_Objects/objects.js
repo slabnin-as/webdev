@@ -71,9 +71,6 @@
         return countriesList
             .filter(function (country) {
                 return country.cities.length === citiesMaximum;
-            })
-            .map(function (country) {
-                return country;
             });
     }
 
