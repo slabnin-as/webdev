@@ -1,0 +1,24 @@
+.persons {
+    border-collapse: collapse;
+    font-family: "Calibri", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 640px;
+}
+
+.persons thead {
+    background-color: #427ec2;
+    color: #fff;
+}
+
+.persons th {
+    border: 1px solid #d3d3d3;
+    text-align: left;
+    padding: 4px 4px 4px 8px;
+}
+
+.persons thead > tr > th:nth-child(1) {
+    width: 40px;
+    padding: 0;
+    text-align: center;
+}
