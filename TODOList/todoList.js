@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         var note = document.createElement("li");
-        note.style.paddingBottom = "5px";
 
         function addNote(text) {
             note.innerHTML = "<span></span><button type='button' class='delete-button'>Удалить</button>" +
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     var editingText = editTextLine.value;
                     addNote(editingText);
                 });
-
             });
         }
 
