@@ -61,14 +61,14 @@
 
     console.log(averageAge);
 
-    var names = _.chain(people)
+    var goodPeople = _.chain(people)
         .filter(function (person) {
-            return person.age >= 20 && person.age <=30;
+            return person.age >= 20 && person.age <= 30;
         })
         .sortBy("age")
         .value();
 
-    console.table(names);
+    console.table(goodPeople);
 
     _.each(people, function (person) {
         person.fullName = person.lastName + " " + person.name;
