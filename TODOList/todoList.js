@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var button = document.getElementById("add-note");
 
     button.addEventListener("click", function () {
-        var newText = inputText.value;
+        var newText = inputText.value.trim();
 
         if (newText === "") {
             return;
@@ -41,7 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 var saveButton = note.children[2];
                 saveButton.addEventListener("click", function () {
-                    var editingText = editTextLine.value;
+                    var editingText = editTextLine.value.trim();
+
+                    if (editingText === "") {
+                        alert("Заметка не может быть пустой!");
+                        editTextLine.focus();
+                        return;
+                    }
+
                     addNote(editingText);
                 });
             });
