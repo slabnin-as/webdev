@@ -2,7 +2,7 @@
     margin: 0 15px;
 }
 
-button {
+.buttons {
     margin-left: 5px;
 }
 
@@ -10,6 +10,6 @@ button {
     margin-left: 40px;
 }
 
-#todo-list li {
+.todo-list li {
     padding-bottom: 5px;
 }

@@ -1,0 +1,15 @@
+{
+  "name": "todolist_jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "todoList.js",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Slabnin Anton",
+  "license": "ISC"
+}

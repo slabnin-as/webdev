@@ -1,7 +1,7 @@
 $(function () {
     $("#add-note").click(function () {
         var userInputField = $("#input-field");
-        var inputText = userInputField.val();
+        var inputText = userInputField.val().trim();
 
         if (inputText === "") {
             return;
@@ -30,7 +30,15 @@ $(function () {
                 });
 
                 note.children(".save-button").click(function () {
-                    var newText = note.children("input[type=text]").val();
+                    var newInputField = note.children("input[type=text]");
+                    var newText = newInputField.val().trim();
+
+                    if (newText === "") {
+                        alert("Заметка не может быть пустой!");
+                        newInputField.focus();
+                        return;
+                    }
+
                     addNote(newText);
                 });
             });
